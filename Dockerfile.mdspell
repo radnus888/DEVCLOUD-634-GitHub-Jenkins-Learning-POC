@@ -1,0 +1,10 @@
+FROM node:12.18.4-alpine3.12
+
+RUN npm config set unsafe-perm true
+
+# Install spellcheck
+RUN npm cache add https://github.com/ojacques/node-markdown-spellcheck/tarball/master
+RUN npm install -g --save https://github.com/ojacques/node-markdown-spellcheck/tarball/master
+
+ENTRYPOINT ["mdspell"]
+CMD ["--help"]
