@@ -1,0 +1,24 @@
+# Spelling Exceptions
+# Format - lines beginning # are comments
+# one word per line, to define a file override use ' - filename'
+# where filename is relative to this config file
+
+# Platform DXC Spelling tips:
+# - Case is important.  Where there is a proper noun, or a word with special case, keep it with the ideal case below so usages of it without proper case will flag.
+# - Add any formal names not recognized to .spelling section below
+# - Keep proper names (vendors, etc.) properly capitalized; don't add their lowercase equivalents to .spelling, so they properly flag to be fixed
+# - Acronyms are already set to be ignored (mdspell -a), so long as they are fully capitalized and aren't needed here in those cases; only add mixed case acronyms
+# - Spelling set to look for US English; fix any other spelling to align to that as opposed to adding ignore below to keep consistent
+#
+# For more tips, see CONTRIBUTING.md
+
+config
+GitHub
+gitbash
+Jenkinsfile
+README.md
+Jira
+Github
+DEVCLOUD-626
+GitHub/Jenkins
+POC
